@@ -1,0 +1,18 @@
+{
+  "name": "flow-tester",
+  "version": "0.0.1",
+  "description": "Dummy git repo that runs CI tests on various packages.",
+  "main": "index.js",
+  "repository": "https://github.com/AgentME/flow-tester",
+  "author": "Chris Cowan <agentme49@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "test": "flow check"
+  },
+  "dependencies": {
+    "contain-by-screen": "^1.2.1",
+    "flow-bin": "^0.79.1",
+    "ud": "^3.2.0"
+  }
+}
