@@ -1,3 +1,6 @@
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/AgentME/flow-tester.svg)](https://greenkeeper.io/)
+
 This repository exists to test that various packages retain compatibility with
 the latest version of [Flow](https://flow.org/).
 
