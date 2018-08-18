@@ -4,30 +4,33 @@ jobs:
     docker:
       - image: circleci/node:8
     steps:
+
+      # This isn't a good circleci+yarn config to learn from, because
+      # it deliberately ignores yarn.lock. See
+      # https://github.com/AgentME/ud/blob/master/.circleci/config.yml
+      # for an example of a more standard circleci+yarn config file if
+      # you're curious about that.
+
       - checkout
       - restore_cache:
           name: Restore Yarn Package Cache
           keys:
-            - yarn-packages-{{ .Branch }}-{{ checksum "yarn.lock" }}
+            - yarn-packages-{{ .Branch }}-{{ checksum "package.json" }}
             - yarn-packages-{{ .Branch }}
             - yarn-packages-master
             - yarn-packages-
       - run:
-          name: Prepare Greenkeeper
+          name: Remove yarn.lock if present
           command: |
-            echo 'export PATH=$(yarn global bin):$PATH' >> "$BASH_ENV"
-            source "$BASH_ENV"
-            yarn global add greenkeeper-lockfile@1
+            rm -f yarn.lock
       - run:
           name: Install Dependencies
           command: yarn install
       - save_cache:
           name: Save Yarn Package Cache
-          key: yarn-packages-{{ .Branch }}-{{ checksum "yarn.lock" }}
+          key: yarn-packages-{{ .Branch }}-{{ checksum "package.json" }}
           paths:
             - node_modules/
             - ~/.yarn/bin/
             - ~/.config/yarn/global/
-      - run: greenkeeper-lockfile-update
       - run: yarn test
-      - run: greenkeeper-lockfile-upload
