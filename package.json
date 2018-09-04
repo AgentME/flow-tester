@@ -22,7 +22,7 @@
     "kefir-stopper": "^2.1.1",
     "matches-selector-ng": "^1.0.1",
     "mock-webstorage": "^1.0.4",
-    "pdelay": "^1.0.0",
+    "pdelay": "^2.0.0",
     "react-save-refs": "^1.0.2",
     "redux-action-log": "^2.0.1",
     "ud": "^3.2.0"
