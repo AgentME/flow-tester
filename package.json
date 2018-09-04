@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Dummy git repo that runs CI tests on various packages.",
   "main": "index.js",
-  "repository": "https://github.com/AgentME/flow-tester",
+  "repository": "https://github.com/Macil/flow-tester",
   "author": "Chris Cowan <agentme49@gmail.com>",
   "license": "MIT",
   "private": true,
