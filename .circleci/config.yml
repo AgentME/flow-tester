@@ -33,4 +33,5 @@ jobs:
             - node_modules/
             - ~/.yarn/bin/
             - ~/.config/yarn/global/
+            - ~/.cache/yarn
       - run: yarn test
