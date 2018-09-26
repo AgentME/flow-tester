@@ -25,6 +25,7 @@
     "pdelay": "^2.0.0",
     "react-save-refs": "^1.0.2",
     "redux-action-log": "^2.0.1",
+    "synchd": "^1.0.2",
     "ud": "^3.2.0",
     "ud-kefir": "^2.1.0"
   }
