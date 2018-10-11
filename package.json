@@ -16,7 +16,7 @@
     "closest-ng": "^1.0.2",
     "contain-by-screen": "^1.2.1",
     "event-listener-with-options": "^1.0.4",
-    "flow-bin": "^0.82.0",
+    "flow-bin": "^0.83.0",
     "kefir": "^3.8.3",
     "kefir-bus": "^2.2.1",
     "kefir-stopper": "^2.1.1",
