@@ -26,7 +26,7 @@
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
     "react-float-anchor": "^3.0.0",
-    "react-menu-list": "^5.0.1",
+    "react-menu-list": "^6.0.0",
     "react-save-refs": "^1.0.2",
     "redux-action-log": "^2.0.1",
     "synchd": "^1.0.2",
